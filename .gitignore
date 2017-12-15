@@ -1,2 +1,10 @@
+.DS_Store
+*.log
+.idea
+.vscode
+
+/node_modules
+
 ./dist/*
-!/dist/index.html
+!./dist/index.html
+
