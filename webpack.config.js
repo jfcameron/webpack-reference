@@ -19,6 +19,6 @@ module.exports =
             mangle: true,
             compress: true,
             warnings: true
-        })
+        }),
     ]
 };
