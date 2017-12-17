@@ -26,7 +26,7 @@ module.exports =
 
     plugins: 
     [
-        /*new webpack.optimize.UglifyJsPlugin //Requires ES5
+        /*new webpack.optimize.UglifyJsPlugin //Requires ES5 transpilation
         ({
             minimize: true,
             mangle: true,
