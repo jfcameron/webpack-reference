@@ -5,13 +5,11 @@ import html from 'index.html';
 
 function component() 
 {
-    let element = document.createElement('div');
+    const element = document.createElement('div');
       
-    element.innerHTML = "hellp";
+    element.innerHTML = "hello";
   
     return element;
 }
-
-let asdf = 0;
   
 document.body.appendChild(component());
