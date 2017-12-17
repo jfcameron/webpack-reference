@@ -1,6 +1,7 @@
 //import _ from 'lodash';
 
-import img from '../img/awesome.png';
+import img from 'awesome.png';
+import html from 'index.html';
 
 function component() 
 {

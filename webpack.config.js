@@ -7,8 +7,11 @@ module.exports =
     {
         modules: 
         [
-            path.resolve('./src')
-            //  path.resolve('./node_modules')
+            //path.resolve('./src')
+            path.resolve('./src/js'),
+            path.resolve('./src/css'),
+            path.resolve('./src/img'),
+            path.resolve('./src/html')
         ]
     },
 
@@ -35,17 +38,32 @@ module.exports =
 
     module: 
     {
-      rules: 
-      [
-        {
-          test: /\.(png|jpg|gif)$/,
-          use: [
+        rules: 
+        [
             {
-              loader: 'file-loader',
-              options: {}  
+                test: /\.(png|jpg|gif)$/,
+                use: 
+                [
+                    {
+                        loader: 'file-loader',
+                        options: {}  
+                    }
+                ]
+            },
+
+            {
+                test: /\.(html)$/,
+                use: 
+                [
+                    {
+                        loader: 'file-loader',
+                        options: 
+                        {
+                            name: '[name].[ext]'
+                        }  
+                    }
+                ]
             }
-          ]
-        }
-      ]
+        ]
     }
 };
