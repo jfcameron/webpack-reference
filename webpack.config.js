@@ -7,7 +7,6 @@ module.exports =
     {
         modules: 
         [
-            //path.resolve('./src')
             path.resolve('./src/js'),
             path.resolve('./src/css'),
             path.resolve('./src/img'),
@@ -27,13 +26,13 @@ module.exports =
 
     plugins: 
     [
-        new webpack.optimize.UglifyJsPlugin
+        /*new webpack.optimize.UglifyJsPlugin //Requires ES5
         ({
             minimize: true,
             mangle: true,
             compress: true,
             warnings: true
-        }),
+        }),*/
     ],
 
     module: 

@@ -1,15 +1,17 @@
-//import _ from 'lodash';
+'use strict'
 
 import img from 'awesome.png';
 import html from 'index.html';
 
 function component() 
 {
-  //  var element = document.createElement('div');
+    let element = document.createElement('div');
       
-    //element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = "hellp";
   
-    //return element;
-  }
+    return element;
+}
+
+let asdf = 0;
   
-//document.body.appendChild(component());
+document.body.appendChild(component());
